@@ -783,9 +783,8 @@ body.reduce-motion .slide .content-pane { animation: none !important; }
    ÉCRAN TITRE — PRENDS TA PLACE
 ══════════════════════════════════════════════ */
 #intro {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+  position: fixed;
+  inset: 0;
   overflow: hidden;
   background: var(--ivory);
   z-index: 200;
