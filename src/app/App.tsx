@@ -768,9 +768,6 @@ export default function App() {
           <h1 id="intro-title">Prends ta place</h1>
           <p className="intro-subtitle">Une histoire dans le RER B</p>
         </div>
-        <div id="intro-hint">
-          <span className="hint-arrow">▼</span>&nbsp;Défiler pour commencer
-        </div>
       </section>
 
       {/* ── Slide 1 — Quai ── */}
