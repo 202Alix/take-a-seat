@@ -1,23 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prends ta place</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="intro-active">
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Prends ta place</title>
-      <meta name="description" content="Easily upload and share large files and images in one secure location, streamlining collaboration for teams and individuals." />
-      <meta name="robots" content="noindex, nofollow" />
-      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
-      
-      <script type="module" crossorigin src="/take-a-seat/assets/index-BYSXikCs.js"></script>
-      <link rel="stylesheet" crossorigin href="/take-a-seat/assets/index-DfHl7HAX.css">
-    </head>
+<nav id="metro-nav" aria-label="Navigation — Ligne RER B">
+  <div class="metro-track-container">
+    <div class="metro-bg-line"></div>
+    <div class="metro-fill-line" id="metro-fill"></div>
+    <div class="metro-stops" id="metro-stops"></div>
+  </div>
+</nav>
+<div id="metro-mask" aria-hidden="true"></div>
 
-    <body>
-      
-      <div id="root"></div>
-      
-    </body>
-  </html>
-  
+<!-- ── Intro ── -->
+<section id="intro">
+  <img class="intro-gif" src="images/seq0_video.gif" alt="" aria-hidden="true">
+  <div class="intro-copy">
+    <h1 id="intro-title">Prends ta place</h1>
+    <p class="intro-subtitle">Une histoire dans le RER B</p>
+  </div>
+  <div id="intro-hint">Cliquer pour commencer</div>
+</section>
+
+<!-- ── Slide 1 — Quai ── -->
+<section class="slide slide-immersive slide-immersive--train" data-slide="1">
+  <div class="slide-inner">
+    <div class="illustration-pane">
+      <div class="scene-stack" aria-label="Sarah sur le quai, face au RER B">
+        <img class="scene-layer scene-layer--base" src="images/seq1/IMG_8752.png" alt="Quai du RER B">
+        <div class="scene-motion" aria-hidden="true">
+          <img class="motion-layer motion-layer--strip" src="images/seq1/IMG_8757.png" alt="" aria-hidden="true">
+        </div>
+        <img class="scene-layer scene-layer--overlay" src="images/seq1/IMG_8751.png" alt="Sarah de dos devant le train" aria-hidden="true">
+      </div>
+    </div>
+    <div class="content-pane content-pane--hero">
+      <p class="narrative">7h52. Sarah monte dans le RER B.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Bridge 1 ── -->
+<section id="seq1-seq2-bridge" aria-label="Transition vers la séquence 2">
+  <div class="bridge-inner">
+    <p class="bridge-title">Le wagon se remplit</p>
+  </div>
+</section>
+
+<!-- ── Slide 2 ── -->
+<section class="slide slide-seq2" data-slide="2">
+  <div class="slide-inner">
+    <div class="illustration-pane">
+      <div class="scene-stack scene-stack--seq2" aria-label="Le wagon se remplit">
+        <img class="seq2-layer seq2-layer--back" src="images/seq2/IMG_8758.png" alt="Fond du wagon" aria-hidden="true">
+        <img class="seq2-layer seq2-reveal" data-seq2-layer="1" src="images/seq2/IMG_8763.png" alt="" aria-hidden="true">
+        <img class="seq2-layer seq2-reveal" data-seq2-layer="2" src="images/seq2/IMG_8760.png" alt="" aria-hidden="true">
+        <img class="seq2-layer seq2-reveal" data-seq2-layer="3" src="images/seq2/IMG_8764.png" alt="" aria-hidden="true">
+        <img class="seq2-layer seq2-reveal" data-seq2-layer="4" src="images/seq2/IMG_8765.png" alt="" aria-hidden="true">
+        <img class="seq2-layer seq2-reveal" data-seq2-layer="5" src="images/seq2/IMG_8762.png" alt="" aria-hidden="true">
+        <img class="seq2-layer seq2-reveal" data-seq2-layer="6" src="images/seq2/IMG_8761.png" alt="" aria-hidden="true">
+        <img class="seq2-layer seq2-layer--front" src="images/seq2/IMG_8759.png" alt="Sarah au premier plan" aria-hidden="true">
+      </div>
+    </div>
+    <div class="content-pane content-pane--caption">
+      <p class="narrative">Les gens montent.<br>L'espace se resserre.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Bridge 2 ── -->
+<section id="seq2-seq3-bridge" aria-label="Transition vers la séquence 3">
+  <div class="bridge-inner">
+    <p class="bridge-title">Sarah s'assoit.</p>
+  </div>
+</section>
+
+<!-- ── Slide 3 ── -->
+<section class="slide slide-seq3" data-slide="3">
+  <div class="slide-inner">
+    <div class="illustration-pane">
+      <div class="scene-stack scene-stack--seq3" aria-label="Sarah trouve une place assise">
+        <img class="seq3-layer seq3-layer--base" src="images/seq3/IMG_8768.png" alt="Sarah trouve une place" aria-hidden="true">
+        <img class="seq3-layer seq3-layer--swap" src="images/seq3/IMG_8769.png" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div class="content-pane content-pane--caption">
+      <p class="narrative">Elle essaye de ne pas prendre<br>de place. Lui écarte les jambes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Slide 4 — Stat 3 374 victimes ── -->
+<section class="slide" data-slide="4">
+  <div class="slide-inner">
+    <div class="content-pane content-pane--full">
+      <div class="isolated-stat isolated-stat--light">
+        <p class="isolated-stat__number">
+          <span class="stat-number" data-target="3374" data-grouped="true" id="stat-3374">0</span>
+        </p>
+        <p class="isolated-stat__label">victimes de violences sexuelles dans les transports</p>
+        <p class="isolated-stat__sublabel">France — 2024</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Slide 5 ── -->
+<section class="slide slide-seq4" data-slide="5">
+  <div class="slide-inner">
+    <div class="fact-overlay fact-overlay--seq4" id="fact-seq4" aria-live="polite">
+      <div class="fact-carousel" id="fact-seq4-carousel">
+        <div class="fact-carousel-track" id="fact-seq4-track">
+          <div class="fact-carousel-item">
+            <p class="fact-line fact-line--red">Marie-Louise, 30 ans</p>
+            <p class="fact-line fact-line--red">poignardée sur la ligne 4, 2010.</p>
+          </div>
+          <div class="fact-carousel-item">
+            <p class="fact-line fact-line--red">Une femme de 31 ans poussée sur les rails du RER B.</p>
+            <p class="fact-line fact-line--red">Massy-Palaiseau, 2025.</p>
+          </div>
+          <div class="fact-carousel-item">
+            <p class="fact-line fact-line--red">3 femmes poignardées</p>
+            <p class="fact-line fact-line--red">Paris, 2025.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="illustration-pane">
+      <div class="scene-stack scene-stack--seq4" aria-label="Sarah lève la tête">
+        <img class="seq4-layer seq4-layer--look" src="images/seq4/IMG_8772.png" alt="Sarah lève la tête" aria-hidden="true">
+      </div>
+    </div>
+    <div class="content-pane content-pane--caption">
+      <p class="narrative">Sarah détourne le regard,<br>elle préfère ne rien dire.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Slide 6 ── -->
+<section class="slide slide-seq5" data-slide="6">
+  <div class="slide-inner">
+    <div class="illustration-pane">
+      <div class="scene-stack scene-stack--seq5" aria-label="Sarah baisse la tête">
+        <img class="seq5-layer seq5-layer--base" src="images/seq3/IMG_8769.png" alt="Sarah assise" aria-hidden="true">
+        <img class="seq5-layer seq5-layer--swap" src="images/seq5/IMG_8774.png" alt="Sarah baisse la tête" aria-hidden="true">
+        <img class="seq5-layer seq5-layer--next" src="images/seq6/IMG_8778.png" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div class="content-pane content-pane--caption">
+      <div class="seq5-text-wrap">
+        <p class="narrative seq5-text-a">Puis elle sent une main sur sa cuisse.</p>
+        <p class="narrative seq5-text-b">Et un regard insistant sur son corps.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Slide 7 — Stat +86% ── -->
+<section class="slide slide-dark" data-slide="7">
+  <div class="slide-inner">
+    <div class="content-pane content-pane--full">
+      <div class="isolated-stat">
+        <p class="isolated-stat__number">
+          +<span class="stat-number" data-target="86" data-count-trigger="manual" id="stat-86">0</span>%
+        </p>
+        <p class="isolated-stat__label">d'agressions dans les transports en commun</p>
+        <p class="isolated-stat__sublabel">France — 2016 à 2024</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Slide 8 — word reveal ── -->
+<section class="slide slide-dark slide-dark-reveal" data-slide="8">
+  <div class="slide-inner">
+    <div class="content-pane content-pane--full">
+      <p class="narrative narrative--hero">
+        <span class="word-reveal">Sarah</span>
+        <span class="word-reveal">se</span>
+        <span class="word-reveal">lève.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Slide 9 ── -->
+<section class="slide slide-seq9" data-slide="9">
+  <div class="slide-inner">
+    <div class="illustration-pane">
+      <div class="scene-stack scene-stack--seq9" aria-label="Sarah debout dans le wagon">
+        <img class="seq9-layer seq9-layer--look seq-image-negative" src="images/seq9-10/IMG_8783.png" alt="Sarah debout" aria-hidden="true">
+        <img class="seq9-layer seq9-layer--fade seq-image-negative" src="images/seq9-10/IMG_8786.png" alt="" aria-hidden="true">
+        <img class="seq9-layer seq9-layer--next seq-image-negative" src="images/seq11/IMG_8790.png" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div class="content-pane content-pane--caption content-pane--dark">
+      <p class="narrative">Elle esaye de s'éloigner<br>mais il insiste.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Slide 10 — word reveal ── -->
+<section class="slide slide-dark slide-no-intervene slide-dark-reveal" data-slide="10">
+  <div class="slide-inner">
+    <div class="content-pane content-pane--full">
+      <p class="narrative narrative--hero">
+        <span class="word-reveal">Personne</span>
+        <span class="word-reveal">n'intervient.</span>
+      </p>
+      <p class="fact-line fact-line--red fact-line--center word-reveal">
+        Dans une enquête relayée en Île-de-France,
+        <span class="stat-number" data-target="89">0</span>% des témoins n'étaient pas intervenus.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Slide 11 — speech bubble ── -->
+<section class="slide slide-seq11" data-slide="11">
+  <div class="slide-inner">
+    <div class="illustration-pane">
+      <div class="scene-stack scene-stack--seq11" aria-label="Retour de scène">
+        <img class="seq11-layer seq11-layer--from seq-image-negative" src="images/seq11/IMG_8790.png" alt="" aria-hidden="true">
+        <img class="seq11-layer seq11-layer--to seq-image-negative" src="images/seq9-10/IMG_8788.png" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div id="speech-bubble-11" class="speech-bubble" aria-hidden="true">Laisse-la&nbsp;!</div>
+    <div class="content-pane content-pane--caption content-pane--dark">
+      <p class="narrative">Enfin, une femme remarque sa détresse.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Slide 12 — Sortie ── -->
+<section class="slide slide-cream-return" data-slide="12">
+  <div class="slide-inner">
+    <div class="content-pane content-pane--full">
+      <p class="narrative narrative--hero narrative--cream">Les portes s'ouvrent.<br>Sarah sort.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Slide 13 — credits + POV exit dezoom ── -->
+<section class="slide slide-final-image" data-slide="13">
+  <div class="slide-inner">
+    <div class="illustration-pane">
+      <div class="scene-stack scene-stack--final" aria-label="Image finale de Sarah">
+        <img class="final-layer final-layer--back" src="images/seq12/IMG_8794.png" alt="" aria-hidden="true">
+        <img class="final-layer final-layer--look" src="images/seq12/IMG_8793.png" alt="Sarah sort" aria-hidden="true">
+        <div class="final-text-window" aria-live="polite">
+          <div class="final-credits" id="final-credits">
+            <p class="final-credit-line">Par</p>
+            <p class="final-credit-line">Lou-Anne Cartigny</p>
+            <p class="final-credit-line">Alix Labonne</p>
+          </div>
+          <h2 class="final-end-title" id="final-end-title">Prends ta place</h2>
+        </div>
+        <img class="final-pov-exit" src="images/seq1/IMG_8751.png" alt="" aria-hidden="true">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Floating hint ── -->
+<div id="slide-hint"><span class="hint-arrow">▼</span>&nbsp;Défiler pour continuer</div>
+
+<!-- ── Footer ── -->
+<div id="slide-footer">
+  <div id="footer-panel">
+    <button class="footer-btn" id="btn-sound" aria-pressed="false" title="Activer/désactiver le son">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+      Son
+    </button>
+    <button class="footer-btn" id="btn-motion" aria-pressed="false" title="Activer/désactiver les mouvements">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 12 C5 7 8 17 12 12 C16 7 19 17 22 12"/></svg>
+      Mouvements
+    </button>
+    <button class="footer-btn" id="btn-autoscroll" aria-pressed="false" title="Activer/désactiver le défilement automatique">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v14"/><path d="M7 13l5 5 5-5"/></svg>
+      Auto scroll
+    </button>
+    <span id="footer-gear">⚙</span>
+  </div>
+</div>
+
+<canvas id="grain-canvas"></canvas>
+
+<!-- ── Mémoriaux ── -->
+<div class="memorial" id="memorial-1">
+  <div class="memorial-info">
+    <p class="memorial-name">Marie-Louise, 30 ans</p>
+    <p class="memorial-detail">Poignardée dans le métro ligne 4, Paris — 2010</p>
+  </div>
+</div>
+<div class="memorial" id="memorial-2">
+  <div class="memorial-info">
+    <p class="memorial-name">Femme, 31 ans — Massy-Palaiseau</p>
+    <p class="memorial-detail">Poussée sur les rails du RER B — 2025</p>
+  </div>
+</div>
+<div class="memorial" id="memorial-3">
+  <div class="memorial-info">
+    <p class="memorial-name">3 femmes — Paris</p>
+    <p class="memorial-detail">Poignardées dans le métro parisien — décembre 2025</p>
+  </div>
+</div>
+<div class="memorial" id="memorial-4">
+  <div class="memorial-info">
+    <p class="memorial-name">Femme — Station Bel-Air</p>
+    <p class="memorial-detail">Happée par la fermeture d'une porte, métro Paris — 2023</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
